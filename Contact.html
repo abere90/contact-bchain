@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>1st Layout</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Front end development course">
+        <meta name="keywords" content="HTML,CSS,1stLayout">
+        <meta name="author" content="Bere Adrian">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Contact</title>
+        
+        <link rel="stylesheet" type="text/css" href="../layout-blockchain/bundels/fontawsome/css/all.css">
+        <link rel="stylesheet" type="text/css" href="resources/contact.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="assets/logo.png" alt="logo" class="logo">
+            <header>
+                <nav class="nav">
+                    <div class="menu">
+                        <a href="" class="SignUp">Sign Up</a>
+                        <a href="about.html" class="link">About</a>
+                        <a href="Services.html" class="Services">Services</a>
+                        <a href="contact.html" class="Contact">Contact</a>
+                        <a href="Community.html" target=_blank class="Community">Community</a>
+                    </div>    
+                </nav>
+        </div>
+                <div class="contact-wrapper">
+                    <h1>CONTACT US</h1>
+                    <div class="separator-line"></div>
+                    <div class="info">Fill out the form below to learn more</div>
+                </div>    
+            </header>  
+
+            <form>
+                <div class="fname-wrapper">
+                    <label for="fname">First name</label>
+                    <input required class="inputValidation" autofocus type="text" id="fname" name="fname" minlength="5" placeholder="Enter your first name">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="lname-wrapper">
+                    <label for="lname">Last name</label>
+                    <input required class="inputValidation" type="text" id="lname" name="lname" minlength="5" placeholder="Enter your last name">
+                    <i class="fas fa-user"></i>
+                </div>
+                
+                <div class="email-wrapper">
+                    <label for="email">Email</label>
+                    <input required class="inputValidation" type="email" id="email" name="email" placeholder="Enter your email">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="separator-line-bottom"></div>
+
+                <div class="message">
+                    <label for="textarea">Message</label>
+                    <textarea class="inputValidation" required rows="15" cols="35" required minlength="50" maxlength="250"></textarea>
+                </div>
+
+                <div class="submit">
+                    <button>Submit</button>
+                    <div class="submit-text">or press</div>
+                    <a href="">enter</a>
+                </div>
+            </form>
+
+            <footer>
+                <div class="Footer">BLOCKCHAIN</div>
+                <div>TECHNOLOGY</div>
+            </footer>
+    </body>

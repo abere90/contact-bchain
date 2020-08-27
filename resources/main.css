@@ -1,0 +1,99 @@
+body{
+    font-family:Verdana,Georgia,Arial,sans-serif;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* background-size, background-repeat au efect doar cand folosesti un background-image. Logo-ul este incarcat folosind un <img>, este diferit. */
+.logo{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    margin: 100px 150px
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: -100px;
+    font-weight: bolder;
+}
+
+.border-bottom{
+    text-align: center;
+    margin-top: -50px;
+    font-size:64px;
+    letter-spacing: 30px;
+    font-weight: 300;
+}
+
+hr{
+    width: 300px;
+}
+
+.nav  a + a{
+    display: inline-block;
+    text-decoration: none;
+    color: white; 
+}
+
+.SignUp{
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    color: blue;
+    word-spacing: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+hr,p, .border-bottom{
+    color: lightblue;
+}
+
+.menu{
+    position: absolute;
+    right: 200px;
+    top: 125px;
+    word-spacing: 40px;
+}
+
+.nav a:hover{
+    color: aquamarine;
+}
+
+a:active{
+    color: hotpink;
+}
+
+.prev-page::before{
+    content:'<<';
+    display: inline-block;
+    margin-left: 10px;
+}
+
+p{
+    width: 500px;
+    text-align: center;
+    /* Tot ce trece de 50-80px pt ceea ce priveste margin, padding, position e deja extrem de manual si pe o rezolutie diferita de a ta deja nu se va mai vedea cum intentioneaza layout-ul */
+    /* margin-left: 750px; */
+    margin: 0 auto;
+}
+
+main{
+    /* Nu ai nevoie sa fixezi un width de dimensiunea asta, il vrem doar cat e viewport-ul. Pe o rezolutie diferita de a ta te asigur ca nu va fi centrat */
+    /* width: 2000px; */
+    width: 100%;
+    margin-top: 100px;
+}
+
+.separator {
+    width: 300px;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    margin-bottom: 50px;
+}

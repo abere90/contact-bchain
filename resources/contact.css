@@ -1,0 +1,181 @@
+html, body{
+    font-family:sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    width: 100px;
+    margin: 100px 150px
+}
+
+.nav  a + a{
+    display: inline-block;
+    text-decoration: none;
+    color: white; 
+}
+
+.SignUp{
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    color: blue;
+    word-spacing: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu{
+    position: absolute;
+    right: 200px;
+    top: 125px;
+    word-spacing: 40px;
+}
+
+.nav a:hover{
+    color: aquamarine;
+}
+
+a:active{
+    color: hotpink;
+}
+
+.contact-wrapper{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+
+
+.separator-line{
+    border-bottom: 1px solid aqua;
+    width: 245px;
+}
+
+.info{
+    padding-top: 20px;
+    font-size: 25px;
+}
+h1{
+    font-weight: 100;
+}
+
+label{
+    display: block;
+    padding-bottom:20px;
+}
+
+.fname-wrapper, .lname-wrapper, .email-wrapper{
+    padding: 30px 30px;
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    position: relative;
+}
+
+form{
+    color: gray;
+    display: block;
+    margin-top: 25px;
+}
+
+input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-left: 50px;
+}
+
+.fname-wrapper i, .lname-wrapper i, .email-wrapper i{
+    position: absolute;
+}
+
+.fname-wrapper i{
+    left:50px;   
+    bottom:10px;
+
+}
+
+.lname-wrapper i{
+    left: 50px;
+    bottom:10px;
+}
+
+.email-wrapper i{
+    left: 50px;
+    bottom: 10px;
+}
+
+.separator-line-bottom{
+    /* display: inline-block; */
+    border-bottom:1px solid aqua;
+    width: 50%;
+    margin-left: 27%;
+    padding-top: 100px;
+}
+
+.message textarea{
+    width: 50%;
+    margin-left: 27%;
+}
+
+.message label{
+    margin-left: 27%;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+button{
+    width:150px;
+    height: 50px;
+    background-color: #00ffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+a{
+    padding-left: 5px;
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.submit-text{
+    padding-left: 15px;
+}
+
+.inputValidation:invalid:focus,
+.inputValidation:required:invalid{
+    background-image: linear-gradient(to right, rgb(108, 194, 228),white);
+}
+.inputValidation:disabled{
+    background-color: gray;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00ffff ;
+}
+.footer{
+    font-size: 20px;
+    color: darkblue;
+}
