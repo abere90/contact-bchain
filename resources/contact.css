@@ -14,6 +14,7 @@ html, body{
     background-size: cover;
     position: relative;
 }
+/* dimensiuni direct pe imagine nu iti recomand. Este ok sa folosesti un wrapper si sa pui dimensiunile dorite acolo, iar img sa se adapteze la parent */
 .logo{
     width: 100px;
     margin: 100px 150px
@@ -37,6 +38,7 @@ html, body{
     text-decoration: none;
 }
 
+/* pozitionare pt scopul asta nu este good practice. Puteai sa folosesti floar sau flex. Pe o rezolutie diferita de a ta nu ai sa vezi aceeasi pozitionare si nu vrei asta */
 .menu{
     position: absolute;
     right: 200px;
@@ -52,6 +54,7 @@ a:active{
     color: hotpink;
 }
 
+/* aceeasi observatie de mai sus cu privire la pozitionare */
 .contact-wrapper{
     position: absolute;
     left: 150px;
@@ -79,9 +82,12 @@ label{
 
 .fname-wrapper, .lname-wrapper, .email-wrapper{
     padding: 30px 30px;
+    /* toate regulile astea puteau fi puse direct pe form nu pe fiecare in parte, este bad practice */
     width: 50%;
     height: 50px;
-    margin-left: 25%;
+    /* este ok sa lasi browser-ul sa calculeze asta cu auto, nu sa o faci tu pentru el */
+    /* margin-left: 25%; */
+    margin: 0 auto;
     position: relative;
 }
 
@@ -122,16 +128,22 @@ input{
     /* display: inline-block; */
     border-bottom:1px solid aqua;
     width: 50%;
-    margin-left: 27%;
+    /* din nou, nu este ok sa apreciezi tu asta pentru browser */
+    /* margin-left: 27%; */
+    margin: 0 auto;
     padding-top: 100px;
 }
 
 .message textarea{
+    /* sunt reguli care de obicei se pun pe parent si nu pe child, deci puteau fi puse pe .message */
     width: 50%;
-    margin-left: 27%;
+    /* margin-left: 27%; */
+    display: block;
+    margin: 0 auto;
 }
 
 .message label{
+    /* aceeasi observatie de mai sus in legatura cu auto */
     margin-left: 27%;
     margin-top: 50px;
     font-size: 25px;
